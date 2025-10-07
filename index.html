@@ -9,7 +9,7 @@
       margin: 0;
       font-family: "Times New Roman", serif;
       background-color: #ffffff;
-      color: #333;
+      color: white;
     }
     header {
       background-color: #003366;
@@ -25,18 +25,38 @@
       font-style: italic;
       font-size: 16px;
     }
-    nav {
-      background-color: #f2f2f2;
+ 	.img-fone {
+
+ position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px); /* степень размытия */
+      z-index: -1; /* чтобы фон был позади контента */
+	background:url(https://kartinki.pics/uploads/posts/2021-04/1617592581_30-p-fon-dlya-saita-uchitelya-34.jpg);}
+    
+nav {
       text-align: center;
       padding: 15px;
       border-bottom: 1px solid #ccc;
+}
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      padding: 50px;
+    }
+	main{
     }
     a {
       font-size: 24px;
-      color: #003366;
+      color: white;
     }
     nav a {
-font-size: 20px;
+	font-size: 20px;
       display: inline-block;
       margin: 0 10px;
       padding: 10px 20px;
@@ -55,7 +75,7 @@ font-size: 20px;
       margin: auto;
     }
     h2 {
-      color: #003366;
+      color: white;
       font-size: 24px;
       text-align: center;
       margin-bottom: 20px;
@@ -90,7 +110,9 @@ font-size: 20px;
   <h1>Платформа для учителей СШ №89 г. Минска</h1>
   <p>Мастерство педагога — это способность видеть свет в каждом учащемся!</p>
 </header>
-<main>
+<div class="img-fone" ></div>
+<main class="content" >
+<div >
 <nav>
   <a href="#academy">Академия педагогического мастерства</a>
   <a href="#calendar">Календарь проведения мероприятий</a>
